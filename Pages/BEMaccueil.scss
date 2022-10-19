@@ -1,51 +1,76 @@
 
 //Explorer
 
-.explorer-loc {
-    background-color: #eaeaea;
-    width: 100%;
-    height: 3.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 3px 5px rgb(196, 196, 196);
-}
+.explorer {
 
-.explorer-accueil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f6f6f6;
-    text-align: center;
-}
+    .loc {
+        background-color: #eaeaea;
+        width: 100%;
+        height: 3.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 3px 5px rgb(196, 196, 196);
+    }
 
+    .accueil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        background-color: #f6f6f6;
+        text-align: center;
+    }
+
+}
 
 //Fonctionnement
 
-.liste-cartes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-    height: 19.5rem;
-}
-
-    .liste-cartes_carte {
-        width: 100%;
-        height: 5.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        column-gap: 1rem;
-        background-color: #f6f6f6;
-        border-radius: 1.8rem;
-        box-shadow: 5px 5px 12px rgb(163, 163, 163);
-    }
-
-    .liste-cartes_carte:hover {
-        background-color: #f5edff;
-    }
+.liste {
+    margin-top: 4rem;
+    margin-left: 1rem;
     
+    .liste-cartes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 19.5rem;
+        margin-left: 1rem;
+        
+        .liste-cartes_carte {
+            width: 100%;
+            height: 5.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 1rem;
+            background-color: #f6f6f6;
+            border-radius: 1.8rem;
+            box-shadow: 5px 5px 12px rgb(163, 163, 163);
+
+            &:hover {
+                background-color: #f5edff;
+            }
+            
+            .number {
+                background-color: #9356DC;
+                color: white;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -1rem;
+            }
+        }
+            
+    }
+}
+    
+
+
+//Restaurants
+

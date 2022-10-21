@@ -1,26 +1,26 @@
 footer {
   background-color: #353535;
-  width: auto;
-  height: 13rem;
+  width: 100%;
   color: white;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 0 3rem 2rem;
 }
-footer a {
-  text-decoration: none;
-  color: white;
-}
-footer img {
+footer #logo-footer {
   color: white;
   width: 8rem;
   height: 1.5rem;
-  margin-bottom: 0.7rem;
 }
-
-.footer-element {
+footer .participer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 16%;
-  margin: 0;
+  line-height: 0;
+}
+footer #autres {
+  line-height: 1rem;
+}
+footer #autres a {
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=footer.css.map */

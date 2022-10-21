@@ -1,4 +1,5 @@
-.explorer-button {
+button {
+  color: white;
   background: linear-gradient(175deg, #ed73da, #9356DC);
   width: 17rem;
   height: 3.7rem;

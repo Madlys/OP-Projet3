@@ -1,4 +1,4 @@
-.explorer-loc {
+.explorer .explorer-loc {
   background-color: #eaeaea;
   width: 100%;
   height: 3.4rem;
@@ -7,8 +7,7 @@
   align-items: center;
   box-shadow: inset 0 3px 5px rgb(196, 196, 196);
 }
-
-.explorer-accueil {
+.explorer .explorer-accueil {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,19 +16,19 @@
   text-align: center;
 }
 
-.liste {
-  margin-top: 4rem;
-  margin-left: 2rem;
+.fonctionnement {
+  margin: 4rem 0 6rem 2rem;
 }
-.liste .liste-cartes {
+.fonctionnement .etapes {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
+  margin-left: 1rem;
   height: 19.5rem;
 }
-.liste .liste-cartes_carte {
+.fonctionnement .etape {
   width: 100%;
   height: 5.5rem;
   display: flex;
@@ -42,10 +41,10 @@
   border-radius: 1.8rem;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
 }
-.liste .liste-cartes_carte:hover {
+.fonctionnement .etape:hover {
   background-color: #f5edff;
 }
-.liste .liste-cartes_carte .number {
+.fonctionnement .etape .number {
   background-color: #9356DC;
   width: 2rem;
   height: 2rem;
@@ -56,4 +55,60 @@
   margin-left: -1rem;
   color: white;
   font-family: "Roboto-Regular", sans-serif;
+}
+
+.liste {
+  background-color: #f6f6f6;
+  padding: 3rem 0 6rem 2rem;
+  width: 100%;
+}
+.liste .cartes {
+  width: 97%;
+  margin-top: 2rem;
+  background-color: #008766;
+}
+.liste .cartes .carte {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 12px rgb(163, 163, 163);
+}
+.liste .cartes .carte .photo {
+  position: relative;
+}
+.liste .cartes .carte .photo .photo_restaurant {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.liste .cartes .carte .photo .nouveau {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+}
+.liste .cartes .carte .infos {
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.liste .cartes .carte .infos .texte {
+  line-height: 0.7rem;
+}
+.liste .cartes .carte .infos .texte h2, .liste .cartes .carte .infos .texte p {
+  color: black;
+}
+.liste .cartes .carte .infos i:hover, .liste .cartes .carte .infos i:active {
+  color: linear-gradient(#9356DC, #ed73da);
 }/*# sourceMappingURL=BEMaccueil.css.map */

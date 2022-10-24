@@ -64,6 +64,12 @@ footer #autres a {
   text-decoration: none;
   color: white;
 }
+footer div p {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
 
 header {
   display: flex;
@@ -191,4 +197,30 @@ header img {
 }
 .liste .cartes .carte .infos i:hover, .liste .cartes .carte .infos i:active {
   color: linear-gradient(#9356DC, #ed73da);
+}
+
+.loader {
+  border: 16px solid #f6f6f6;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=accueil.css.map */

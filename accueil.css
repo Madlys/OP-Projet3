@@ -64,12 +64,6 @@ footer #autres a {
   text-decoration: none;
   color: white;
 }
-footer div p {
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
-}
 
 header {
   display: flex;

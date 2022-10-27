@@ -193,15 +193,56 @@ header img {
   color: linear-gradient(#9356DC, #ed73da);
 }
 
-.loader {
-  border: 16px solid #f6f6f6;
-  border-top: 16px solid #9356DC;
+#loader, #loading {
+  margin: 0;
+  padding: 0;
+}
+
+#loader {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+}
+#loader #loading {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: #eaeaea;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 3;
+}
+#loader #loading:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border: 10px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
 }
+
+/*.loader {
+    border: 16px solid #9356DC;
+    border-top: 16px solid #9356DC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}*/
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);

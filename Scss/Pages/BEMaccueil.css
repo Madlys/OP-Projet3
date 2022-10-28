@@ -51,6 +51,10 @@
 .fonctionnement .etape:hover {
   background-color: #f5edff;
 }
+.fonctionnement .etape:hover .fa-mobile-alt, .fonctionnement .etape:hover .fa-list-ul, .fonctionnement .etape:hover .fa-store {
+  color: #9356DC;
+  opacity: 1;
+}
 .fonctionnement .etape .number {
   background-color: #9356DC;
   width: 2rem;

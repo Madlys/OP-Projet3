@@ -280,4 +280,16 @@ header img {
   margin: 0 1rem 0 0.8rem;
   font-size: 1.6rem;
   opacity: 0.6;
+}
+
+.fa-heart {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: black;
+  display: initial;
+}
+.fa-heart:hover {
+  transition: opacity 0.3s linear 0s;
+  background: linear-gradient(0deg, #ed73da, #9356DC);
 }/*# sourceMappingURL=accueil.css.map */

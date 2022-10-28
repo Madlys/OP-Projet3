@@ -1,12 +1,26 @@
-.fa-map-marker-alt  {
+.fa-map-marker-alt  {   //partie explorer
     margin-right: 1.5rem;
     font-size: 1.5rem;
     opacity: 0.8;
 }
 
-.fa-mobile-alt, .fa-list-ul, .fa-store{
+.fa-mobile-alt, .fa-list-ul, .fa-store {    //partie fonctionnement
     margin: 0 1rem 0 0.8rem;
     font-size: 1.6rem;
     opacity: 0.6;
-
 }
+
+.fa-heart {     //coeur creux
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: black;
+        display: initial;
+
+    &:hover {
+        //font-weight: bold;
+        transition: opacity 0.3s linear 0s;
+        //color: #9356DC;
+        background: linear-gradient(0deg, #ed73da, #9356DC);
+    }
+} 

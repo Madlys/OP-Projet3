@@ -1,0 +1,31 @@
+footer {
+  background-color: #353535;
+  width: 100%;
+  color: white;
+  padding: 1rem 0 3rem 2rem;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+footer ul {
+  list-style-type: none;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 1.5rem;
+  margin-left: -2.5rem;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+footer ul li .fa-utensils {
+  margin-right: 1.6rem;
+  font-size: 1.3rem;
+}
+footer ul li .fa-hands-helping {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+footer ul li a {
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

@@ -37,6 +37,13 @@ a {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
 }
+@media screen and (min-width: 640px) {
+  .explorer-button {
+    width: 25rem;
+    height: 5.5rem;
+    font-size: 1.8rem;
+  }
+}
 
 footer {
   background-color: #353535;
@@ -145,7 +152,7 @@ header img {
   border-radius: 1.8rem;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) and (max-width: 1150px) {
   .fonctionnement .etapes .etape {
     flex-direction: column;
     height: auto;
@@ -178,8 +185,13 @@ header img {
   }
 }
 @media screen and (min-width: 640px) {
-  .fonctionnement .etapes .etape .number h2 {
+  .fonctionnement .etapes .etape h2 {
     margin: 1rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .fonctionnement .etapes .etape h2 {
+    margin-right: 2rem;
   }
 }
 

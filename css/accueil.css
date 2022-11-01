@@ -125,7 +125,15 @@ header img {
   margin: 1rem 1.5rem 1rem 2.5rem;
   height: 20rem;
 }
-.fonctionnement .etape {
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes {
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    gap: 2rem;
+  }
+}
+.fonctionnement .etapes .etape {
   width: 100%;
   height: 5.5rem;
   display: flex;
@@ -137,14 +145,20 @@ header img {
   border-radius: 1.8rem;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
 }
-.fonctionnement .etape:hover {
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes .etape {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.fonctionnement .etapes .etape:hover {
   background-color: #f5edff;
 }
-.fonctionnement .etape:hover .fa-mobile-alt, .fonctionnement .etape:hover .fa-list-ul, .fonctionnement .etape:hover .fa-store {
+.fonctionnement .etapes .etape:hover .fa-mobile-alt, .fonctionnement .etapes .etape:hover .fa-list-ul, .fonctionnement .etapes .etape:hover .fa-store {
   color: #9356DC;
   opacity: 1;
 }
-.fonctionnement .etape .number {
+.fonctionnement .etapes .etape .number {
   background-color: #9356DC;
   width: 2rem;
   height: 2rem;
@@ -155,6 +169,18 @@ header img {
   margin-left: -1rem;
   color: white;
   font-family: "Roboto-Regular", sans-serif;
+}
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes .etape .number {
+    align-self: start;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes .etape .number h2 {
+    margin: 1rem;
+  }
 }
 
 .liste {
@@ -169,12 +195,29 @@ header img {
   width: 100%;
   margin-top: 2rem;
 }
+@media screen and (min-width: 640px) {
+  .liste .cartes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 1.5rem 3rem 1.5rem;
+    width: auto;
+    column-gap: 1rem;
+  }
+}
 .liste .cartes .carte {
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
   margin: 0 1.5rem 2rem 1.5rem;
   height: 25%;
+}
+@media screen and (min-width: 640px) {
+  .liste .cartes .carte {
+    margin: 0;
+    height: auto;
+    width: 45%;
+  }
 }
 .liste .cartes .carte .photo {
   position: relative;
@@ -199,6 +242,20 @@ header img {
   color: #008766;
   font-weight: bold;
 }
+@media screen and (min-width: 640px) and (max-width: 730px) {
+  .liste .cartes .carte .photo .nouveau {
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 730px) and (max-width: 850px) {
+  .liste .cartes .carte .photo .nouveau {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
+}
 .liste .cartes .carte .infos {
   display: flex;
   flex-direction: row;
@@ -206,13 +263,24 @@ header img {
   align-items: center;
   margin: 0 2.5rem 1.5rem 1rem;
 }
+@media screen and (min-width: 640px) and (max-width: 850px) {
+  .liste .cartes .carte .infos {
+    margin-right: 1.2rem;
+  }
+}
 .liste .cartes .carte .infos .texte {
   line-height: 0.7rem;
+}
+@media screen and (min-width: 640px) and (max-width: 735px) {
+  .liste .cartes .carte .infos .texte h2 {
+    line-height: 2rem;
+    margin-right: 1rem;
+  }
 }
 .liste .cartes .carte .infos .texte h2, .liste .cartes .carte .infos .texte p {
   color: black;
 }
-.liste .cartes .carte .infos i:hover, .liste .cartes .carte .infos i:active {
+.liste .cartes .carte .infos i:hover {
   color: linear-gradient(#9356DC, #ed73da);
 }
 

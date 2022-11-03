@@ -296,42 +296,35 @@ header img {
   color: linear-gradient(#9356DC, #ed73da);
 }
 
-.loader {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.loader div {
-  box-sizing: border-box;
-  display: block;
+#loader {
+  font-size: 180px;
   position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #000;
-  border-radius: 50%;
-  animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
-}
-.loader div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.loader div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.loader div:nth-child(3) {
-  animation-delay: -0.15s;
+  left: 45%;
+  top: 40%;
+  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @keyframes loader {
   0% {
-    transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 0;
   }
 }
+.splachscreen {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: loader 0.5s ease 2s 1 normal forwards;
+}
+
 .fa-map-marker-alt {
   margin-right: 1.5rem;
   font-size: 1.5rem;

@@ -10,18 +10,41 @@
     opacity: 0.6;
 }
 
-.fa-heart {     //coeur creux
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    font-weight: lighter;
-    color: black;
-    display: initial;
 
+//Animation coeur
+
+.coeurplein {
+    font-size: 37px;
+    background: linear-gradient(0deg, #ed73da, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    position: relative;
+    left: 40.1px;
+    top: 1px;
+    z-index: 1;
+    opacity: 0;
+    
     &:hover {
-        //font-weight: bold;
-        transition: opacity 0.3s linear 0s;
-        //color: #9356DC;
-        background: linear-gradient(0deg, #ed73da, #9356DC);
+        opacity: 1;
+        animation: appearance .4s ease-in 0s 1 normal forwards;
     }
-} 
 
+    @keyframes appearance {
+        0% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+.coeurvide {
+    font-size: 35px;
+    position: relative;
+    color: black;
+}

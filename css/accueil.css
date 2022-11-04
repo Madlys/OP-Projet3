@@ -292,9 +292,6 @@ header img {
 .liste .cartes .carte .infos .texte h2, .liste .cartes .carte .infos .texte p {
   color: black;
 }
-.liste .cartes .carte .infos i:hover {
-  color: linear-gradient(#9356DC, #ed73da);
-}
 
 #loader {
   font-size: 180px;
@@ -337,16 +334,38 @@ header img {
   opacity: 0.6;
 }
 
-.fa-heart {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: lighter;
-  color: black;
-  display: initial;
-}
-.fa-heart:hover {
-  transition: opacity 0.3s linear 0s;
+.coeurplein {
+  font-size: 37px;
   background: linear-gradient(0deg, #ed73da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  left: 40.1px;
+  top: 1px;
+  z-index: 1;
+  opacity: 0;
+}
+.coeurplein:hover {
+  opacity: 1;
+  animation: appearance 0.4s ease-in 0s 1 normal forwards;
+}
+@keyframes appearance {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.coeurvide {
+  font-size: 35px;
+  position: relative;
+  color: black;
 }
 
 /*# sourceMappingURL=accueil.css.map */

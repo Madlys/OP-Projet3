@@ -53,7 +53,7 @@
         margin: 1rem 1.5rem 1rem 2.5rem;
         height: 20rem;
 
-        @include breakpoint($tablet-pc) {
+        @media screen and (min-width: 640px) {
             flex-direction: row;
             align-items: flex-start;
             height: auto;
@@ -73,7 +73,7 @@
             border-radius: 1.8rem;
             box-shadow: 5px 5px 12px rgb(163, 163, 163);
 
-            @include breakpoint($tablet-pc) {
+            @media screen and (min-width: 640px) {
                 flex-direction: column;
                 height: auto;
             }
@@ -92,7 +92,7 @@
                 margin-left: 0;
                 
 
-                @include breakpoint($big-mobile-1) {
+                @media screen and (min-width: 400px) {
                     margin-left: 2rem;
                 }
 
@@ -118,7 +118,7 @@
                 color: white;
                 font-family: "Roboto-Regular", sans-serif;
 
-                @include breakpoint($big-mobile-1) {
+                @media screen and (min-width: 400px) {
                     margin-right: 20px;
                 }
 
@@ -127,7 +127,7 @@
                     margin-right: 0;
                 }
 
-                @include breakpoint($tablet-pc) {
+                @media screen and (min-width: 640px) {
                     align-self: start;
                     margin-top: -.5rem;
                     margin-left: -.5rem;
@@ -159,7 +159,7 @@
     .cartes {
         margin: 10px 25px 80px 25px;
 
-        @include breakpoint($tablet-pc) {
+        @media screen and (min-width: 640px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -174,7 +174,7 @@
             margin: 0 24px 32px 24px;
             border-radius: 1.5rem;
 
-            @include breakpoint($tablet-pc) {
+            @media screen and (min-width: 640px) {
                 margin: 0;
                 height: 340px;
             }

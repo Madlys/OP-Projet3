@@ -1,22 +1,423 @@
-/* Error: Undefined mixin.
- *    ,
- * 56 | /         @include breakpoint($tablet-pc) {
- * 57 | |             flex-direction: row;
- * 58 | |             align-items: flex-start;
- * 59 | |             height: auto;
- * 60 | |             gap: 2rem;
- * 61 | \         }
- *    '
- *   Scss\Pages\BEMaccueil.scss 56:9  @import
- *   Scss\accueil.scss 5:9            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 56 \2502  \250c          @include breakpoint($tablet-pc) {\a 57 \2502  \2502              flex-direction: row;\a 58 \2502  \2502              align-items: flex-start;\a 59 \2502  \2502              height: auto;\a 60 \2502  \2502              gap: 2rem;\a 61 \2502  \2514          }\a    \2575 \a   Scss\\Pages\\BEMaccueil.scss 56:9  @import\a   Scss\\accueil.scss 5:9            root stylesheet";
+h1 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 1.8rem;
 }
+
+h2 {
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.explorer-button {
+  color: white;
+  background: linear-gradient(175deg, #ed73da, #9356DC);
+  width: 17rem;
+  height: 3.7rem;
+  border-radius: 10rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 12px rgb(163, 163, 163);
+  margin: 1rem 0 4.5rem 0;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 640px) {
+  .explorer-button {
+    width: 25rem;
+    height: 5.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  color: white;
+  display: inline-block;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin: 2.5rem 0 0 2rem;
+}
+footer ul {
+  list-style-type: none;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+footer ul li .fa-utensils {
+  margin-right: 1.6rem;
+  font-size: 1.3rem;
+}
+footer ul li .fa-hands-helping {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+footer ul li a {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header img {
+  width: 16rem;
+  height: 2.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.explorer {
+  width: 100%;
+}
+.explorer .explorer-loc {
+  background-color: #eaeaea;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 3px 5px rgb(196, 196, 196);
+}
+.explorer .explorer-loc h2 {
+  opacity: 0.8;
+}
+.explorer .explorer-accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.explorer .explorer-accueil h1 {
+  margin: 50px 20px 10px 20px;
+}
+.explorer .explorer-accueil p {
+  opacity: 0.8;
+  font-size: x-large;
+  margin: 0.5rem 2rem 1.5rem 2rem;
+}
+
+.fonctionnement h1 {
+  margin: 4rem 0 2rem 1.5rem;
+}
+.fonctionnement .etapes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 1rem 2.5rem;
+  height: 20rem;
+}
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes {
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    gap: 2rem;
+  }
+}
+.fonctionnement .etapes .etape {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  column-gap: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 1.8rem;
+  box-shadow: 5px 5px 12px rgb(163, 163, 163);
+}
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes .etape {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.fonctionnement .etapes .etape:hover {
+  background-color: #f5edff;
+}
+.fonctionnement .etapes .etape:hover .fa-mobile-alt, .fonctionnement .etapes .etape:hover .fa-list-ul, .fonctionnement .etapes .etape:hover .fa-store {
+  color: #9356DC;
+  opacity: 1;
+}
+.fonctionnement .etapes .etape h2 {
+  margin-right: 2rem;
+  margin-left: 0;
+}
+@media screen and (min-width: 400px) {
+  .fonctionnement .etapes .etape h2 {
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .fonctionnement .etapes .etape h2 {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1250px) {
+  .fonctionnement .etapes .etape h2 {
+    margin: 1rem;
+  }
+}
+.fonctionnement .etapes .etape .number {
+  background-color: #9356DC;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -20px;
+  color: white;
+  font-family: "Roboto-Regular", sans-serif;
+}
+@media screen and (min-width: 400px) {
+  .fonctionnement .etapes .etape .number {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 430px) {
+  .fonctionnement .etapes .etape .number {
+    margin-left: -16px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 640px) {
+  .fonctionnement .etapes .etape .number {
+    align-self: start;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+.liste {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-top: 60px;
+  display: inline-block;
+}
+.liste h1 {
+  margin: 60px 0 0 25px;
+}
+.liste .cartes {
+  margin: 10px 25px 80px 25px;
+}
+@media screen and (min-width: 640px) {
+  .liste .cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    row-gap: 15px;
+  }
+}
+.liste .cartes a {
+  width: 49%;
+  background-color: white;
+  margin: 0 24px 32px 24px;
+  border-radius: 1.5rem;
+}
+@media screen and (min-width: 640px) {
+  .liste .cartes a {
+    margin: 0;
+    height: 340px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 735px) {
+  .liste .cartes a {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 735px) {
+  .liste .cartes a {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .liste .cartes a {
+    width: 32%;
+  }
+}
+.liste .cartes a .carte {
+  height: 100%;
+  box-shadow: 5px 5px 12px rgb(188, 188, 188);
+  border-radius: 1.5rem;
+}
+.liste .cartes a .carte .photo {
+  position: relative;
+}
+.liste .cartes a .carte .photo .photo_restaurant {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 24px 24px 0 0;
+}
+.liste .cartes a .carte .photo .nouveau {
+  width: 128px;
+  height: 48px;
+  border-radius: 3.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+}
+@media screen and (min-width: 640px) and (max-width: 730px) {
+  .liste .cartes a .carte .photo .nouveau {
+    width: 80px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 730px) and (max-width: 850px) {
+  .liste .cartes a .carte .photo .nouveau {
+    width: 96px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+.liste .cartes a .infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px 24px 16px;
+}
+@media screen and (min-width: 640px) and (max-width: 850px) {
+  .liste .cartes a .infos {
+    margin-right: 19.2px;
+  }
+}
+.liste .cartes a .infos .texte {
+  line-height: 11.2px;
+}
+.liste .cartes a .infos .texte h2 {
+  line-height: 28px;
+  margin: 15px 16px -5px 0;
+}
+.liste .cartes a .infos .texte h2, .liste .cartes a .infos .texte p {
+  color: black;
+}
+
+/*#loader {
+  font-size: 180px;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+}
+
+
+  @keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+  .splachscreen {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: loader .5s ease 2s 1 normal forwards;
+  }*/
+.fa-map-marker-alt {
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.fa-mobile-alt, .fa-list-ul, .fa-store {
+  margin: 0;
+  font-size: 25.6px;
+  opacity: 0.6;
+}
+@media screen and (min-width: 360px) {
+  .fa-mobile-alt, .fa-list-ul, .fa-store {
+    margin-right: -20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .fa-mobile-alt, .fa-list-ul, .fa-store {
+    margin: 0 1rem 0 0.8rem;
+  }
+}
+
+.coeurplein {
+  font-size: 37px;
+  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  left: 40.1px;
+  top: 1px;
+  z-index: 1;
+  opacity: 0;
+}
+.coeurplein:hover {
+  opacity: 1;
+  animation: appearance 0.4s ease-in 0s 1 normal forwards;
+}
+@keyframes appearance {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.coeurvide {
+  font-size: 35px;
+  position: relative;
+  color: black;
+}
+
+/*# sourceMappingURL=accueil.css.map */

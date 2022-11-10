@@ -1,17 +1,30 @@
-.fa-map-marker-alt  {   //partie explorer
+//Accueil-partie explorer
+
+.fa-map-marker-alt  {
     margin-right: 1.5rem;
     font-size: 1.5rem;
     opacity: 0.8;
 }
 
-.fa-mobile-alt, .fa-list-ul, .fa-store {    //partie fonctionnement
-    margin: 0 1rem 0 0.8rem;
-    font-size: 1.6rem;
+
+//Accueil-partie fonctionnement
+
+.fa-mobile-alt, .fa-list-ul, .fa-store {
+    margin: 0;
+    font-size: 25.6px;
     opacity: 0.6;
+    
+    @media screen and (min-width: 360px) {
+        margin-right: -20px;
+    }
+    
+    @media screen and (min-width: 480px) {
+        margin: 0 1rem 0 0.8rem;
+    }
 }
 
 
-//Animation coeur
+//Accueil-Animation coeur
 
 .coeurplein {
     font-size: 37px;

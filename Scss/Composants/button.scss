@@ -1,23 +1,12 @@
+@import "../Utils/mixins.scss";
+
 .explorer-button {
-    color: white;
-    background:linear-gradient(175deg, #ed73da, #9356DC);
-    width: 17rem;
-    height: 3.7rem;
-    border-radius: 10rem;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 12px rgb(163, 163, 163);
+    @include button;
     margin: 1rem 0 4.5rem 0;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 1.3rem;
+}
 
-    @media screen and (min-width: 640px) {
-        width: 25rem;
-        height: 5.5rem;
-        font-size: 1.8rem;
-    }
-
+.order-button {
+    @include button;
+    margin: 1rem 0 4.5rem 0;
 }
 

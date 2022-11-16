@@ -291,6 +291,7 @@ header img {
   }
 }
 .liste .cartes a .carte {
+  width: 100%;
   height: 100%;
   box-shadow: 5px 5px 12px rgb(188, 188, 188);
   border-radius: 1.5rem;
@@ -410,7 +411,7 @@ header img {
   }
 }
 
-.coeurplein {
+.coeurplein-accueil, .coeurplein-restaurant {
   font-size: 37px;
   background: linear-gradient(0deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -422,7 +423,7 @@ header img {
   z-index: 1;
   opacity: 0;
 }
-.coeurplein:hover {
+.coeurplein-accueil:hover, .coeurplein-restaurant:hover {
   opacity: 1;
   animation: appearance 0.4s ease-in 0s 1 normal forwards;
 }
@@ -438,7 +439,14 @@ header img {
   }
 }
 
-.coeurvide {
+@media screen and (max-width: 458px) {
+  .coeurplein-restaurant {
+    left: -1px;
+    top: 37px;
+  }
+}
+
+.coeurvide-accueil, .coeurvide-restaurant {
   font-size: 35px;
   position: relative;
   color: black;
@@ -450,6 +458,12 @@ header img {
   position: absolute;
   left: 20px;
   top: 17px;
+}
+@media screen and (max-width: 480px) {
+  .retour, .header-restaurant a {
+    font-size: 24px;
+    left: 15px;
+  }
 }
 
 /*# sourceMappingURL=accueil.css.map */

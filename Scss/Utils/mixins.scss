@@ -16,7 +16,7 @@
     font-family: "Roboto-Regular", sans-serif;
     font-size: 1.3rem;
 
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         width: 25rem;
         height: 5.5rem;
         font-size: 1.8rem;
@@ -34,7 +34,7 @@
 //Accueil-partie Fonctionnement
 
 @mixin fonctionnement {
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         flex-direction: row;
         align-items: flex-start;
         height: auto;
@@ -49,38 +49,38 @@
 }
 
 @mixin fonctionnementIcones_small {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: map-get($breakpoints, mobile_small)) {
         margin: 0 1rem 0 0.8rem;
     }
 }
 
 @mixin fonctionnement_sansTitre {
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         flex-direction: column;
         height: auto;
     }
 }
 
 @mixin etapes_xsmall {
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: map-get($breakpoints, mobile_xsmall)) {
         margin-left: 2rem;
     }
 }
 
 @mixin etapes_small {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: map-get($breakpoints, mobile_small)) {
         margin-left: 0;
     }
 }
 
 @mixin etapes_bigger {
-    @media screen and (min-width: 640px) and (max-width: 1250px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: 1250px) {
         margin: 1rem;
     }
 }
 
 @mixin number_xsmall {
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: map-get($breakpoints, mobile_xsmall)) {
         margin-right: 20px;
     }
 }
@@ -93,7 +93,7 @@
 }
 
 @mixin number_bigger {
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         align-self: start;
         margin-top: -.5rem;
         margin-left: -.5rem;
@@ -107,7 +107,7 @@
 //Accueil-Partie Restaurants
 
 @mixin restaurants {
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -117,20 +117,20 @@
 }
 
 @mixin restaurants_carte_bigger {
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         margin: 0;
         height: 340px;
     }
 }
 
 @mixin restaurants_carte_xbigger {
-    @media screen and (min-width: 640px) and (max-width: 735px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, tablet_big)) {
         height: 380px;
     }
 }
 
 @mixin restaurants_carte_2xbigger {
-    @media screen and (min-width: 735px) {
+    @media screen and (min-width: map-get($breakpoints, tablet_big)) {
         height: 350px;
     }
 }
@@ -141,8 +141,9 @@
     }
 }
 
+
 @mixin nouveau_bigger {
-    @media screen and (min-width: 640px) and (max-width: 730px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: 730px) {
         width: 80px;
         height: 32px;
         font-size: .9rem;
@@ -150,7 +151,7 @@
 }
 
 @mixin nouveau_xbigger {
-    @media screen and (min-width: 730px) and (max-width: 850px) {
+    @media screen and (min-width: 730px) and (max-width: map-get($breakpoints, tablet_xbig)) {
         width: 96px;
         height: 40px;
         font-size: 1.1rem;
@@ -158,16 +159,54 @@
 }
 
 @mixin infosRestau {
-    @media screen and (min-width: 640px) and (max-width: 850px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, tablet_xbig)) {
         margin-right: 19.2px;
     }
 }
 
 
-//Restaurants-Partie Menu
+//Restaurants-Header
 
-@mixin texteCarte {
-    @media screen and (min-width:400px) {
-        height: 90px;
+@mixin logo_small {
+    @media screen and (max-width: map-get($breakpoints, mobile_small)) {
+        width: 13rem;
+        height: 2.1rem;
     }
 }
+
+@mixin retour_small {
+    @media screen and (max-width: map-get($breakpoints, mobile_small)) {
+        font-size:24px;
+        left: 15px;
+    }
+}
+
+//Restaurants-Partie Menu
+
+@mixin coeur_small {
+    @media screen and (max-width:458px) {
+        left: -1px;
+        top: 37px;
+    }
+}
+
+
+
+@mixin menu-titre_tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        justify-content: space-between;
+    }
+}
+
+@mixin menu-titre_tablet-xbig {
+    @media screen and (min-width: map-get($breakpoints, tablet_xbig)){
+        justify-content: flex-start;
+    }
+}
+
+@mixin menu-cartes_pc {
+    @media screen and (min-width: map-get($breakpoints, tablet_xbig)) {
+        display: flex;
+    }    
+}
+

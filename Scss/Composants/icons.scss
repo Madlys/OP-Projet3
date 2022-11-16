@@ -24,7 +24,7 @@
 
 //Accueil-Animation coeur
 
-.coeurplein {
+.coeurplein-accueil, .coeurplein-restaurant {
     font-size: 37px;
     background: linear-gradient(0deg, $secondaryColor, $primaryColor);
     background-clip: text;
@@ -35,6 +35,8 @@
     top: 1px;
     z-index: 1;
     opacity: 0;
+
+    
     
     &:hover {
         opacity: 1;
@@ -53,8 +55,11 @@
         }
     }
 }
+.coeurplein-restaurant {
+    @include coeur_small;
+}
 
-.coeurvide {
+.coeurvide-accueil, .coeurvide-restaurant {
     font-size: 35px;
     position: relative;
     color: black;
@@ -69,4 +74,6 @@
     position: absolute;
     left: 20px;
     top: 17px;
+
+    @include retour_small;
 }

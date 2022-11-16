@@ -1,0 +1,17 @@
+@import "../Utils/mixins.scss";
+
+.header-restaurant {
+    display: flex;
+    flex-direction: column;
+
+    .photo_restaurant {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: -10%;
+    }
+    
+    .logo {
+        @include logo;
+    }
+}

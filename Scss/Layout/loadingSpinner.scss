@@ -1,11 +1,12 @@
 
+/*@import "../Utils/variables.scss";
 
-/*#loader {
+#loader {
   font-size: 180px;
   position: absolute;
   left: 45%;
   top: 40%;
-  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background: linear-gradient(0deg, $secondaryColor $primaryColor);
   background-clip: text;
   -webkit-background-clip: text;
   color:transparent;

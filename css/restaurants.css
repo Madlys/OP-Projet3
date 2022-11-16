@@ -1,6 +1,6 @@
 .explorer-button {
   color: white;
-  background: linear-gradient(175deg, #ed73da, #9356DC);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   width: 17rem;
   height: 3.7rem;
   border-radius: 10rem;
@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
-  margin: 1rem 0 4.5rem 0;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
   margin: 1rem 0 4.5rem 0;
@@ -24,7 +23,7 @@
 
 .order-button {
   color: white;
-  background: linear-gradient(175deg, #ed73da, #9356DC);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   width: 17rem;
   height: 3.7rem;
   border-radius: 10rem;
@@ -33,10 +32,9 @@
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
-  margin: 1rem 0 4.5rem 0;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
-  margin: 1rem 0 4.5rem 0;
+  margin: 70px auto 120px auto;
 }
 @media screen and (min-width: 640px) {
   .order-button {
@@ -103,7 +101,7 @@ footer ul li a {
 
 .coeurplein {
   font-size: 37px;
-  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -133,6 +131,101 @@ footer ul li a {
   font-size: 35px;
   position: relative;
   color: black;
+}
+
+.retour, .header-restaurant a {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.769);
+  position: absolute;
+  left: 20px;
+  top: 17px;
+}
+
+.header-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.header-restaurant .photo_restaurant {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: -10%;
+}
+.header-restaurant .logo {
+  width: 16rem;
+  height: 2.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: inline-block;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.menu .menu-titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px 0 25px;
+}
+.menu .menu-titre h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  font-size: 35px;
+}
+.menu .menu-cartes .menu-cartes_restaurant {
+  height: 30%;
+  margin: 0 20px 50px 20px;
+  gap: 20px;
+}
+.menu .menu-cartes .menu-cartes_restaurant h2 {
+  margin-left: 10px;
+  margin-top: 20px;
+  border-bottom: 5px solid #99E2D0;
+  width: 65px;
+  line-height: 40px;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 12px rgb(188, 188, 188);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 400px) {
+  .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id {
+    height: 90px;
+  }
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description {
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 1px;
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description h3, .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description p {
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix {
+  margin-right: 25px;
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix p {
+  position: relative;
+  top: 25px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix i {
+  visibility: collapse;
 }
 
 /*# sourceMappingURL=restaurants.css.map */

@@ -24,7 +24,7 @@ a {
 
 .explorer-button {
   color: white;
-  background: linear-gradient(175deg, #ed73da, #9356DC);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   width: 17rem;
   height: 3.7rem;
   border-radius: 10rem;
@@ -33,7 +33,6 @@ a {
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
-  margin: 1rem 0 4.5rem 0;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
   margin: 1rem 0 4.5rem 0;
@@ -48,7 +47,7 @@ a {
 
 .order-button {
   color: white;
-  background: linear-gradient(175deg, #ed73da, #9356DC);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   width: 17rem;
   height: 3.7rem;
   border-radius: 10rem;
@@ -57,10 +56,9 @@ a {
   justify-content: center;
   align-items: center;
   box-shadow: 5px 5px 12px rgb(163, 163, 163);
-  margin: 1rem 0 4.5rem 0;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
-  margin: 1rem 0 4.5rem 0;
+  margin: 70px auto 120px auto;
 }
 @media screen and (min-width: 640px) {
   .order-button {
@@ -109,7 +107,6 @@ header {
   align-items: center;
   width: 100%;
 }
-
 header img {
   width: 16rem;
   height: 2.7rem;
@@ -317,7 +314,7 @@ header img {
   position: absolute;
   top: 8px;
   right: 24px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #008766;
   font-weight: bold;
 }
@@ -358,12 +355,14 @@ header img {
   color: black;
 }
 
-/*#loader {
+/*@import "../Utils/variables.scss";
+
+#loader {
   font-size: 180px;
   position: absolute;
   left: 45%;
   top: 40%;
-  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background: linear-gradient(0deg, $secondaryColor $primaryColor);
   background-clip: text;
   -webkit-background-clip: text;
   color:transparent;
@@ -413,7 +412,7 @@ header img {
 
 .coeurplein {
   font-size: 37px;
-  background: linear-gradient(0deg, #ed73da, #9356DC);
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -443,6 +442,14 @@ header img {
   font-size: 35px;
   position: relative;
   color: black;
+}
+
+.retour, .header-restaurant a {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.769);
+  position: absolute;
+  left: 20px;
+  top: 17px;
 }
 
 /*# sourceMappingURL=accueil.css.map */

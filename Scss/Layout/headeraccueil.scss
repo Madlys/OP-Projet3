@@ -1,13 +1,12 @@
+@import "../Utils/mixins.scss";
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
 
-    header img {
-        width: 16rem;
-        height: 2.7rem;
-        margin-top: 2rem;
-        margin-bottom: 1.2rem;
+    img {
+        @include logo;
     }
+}

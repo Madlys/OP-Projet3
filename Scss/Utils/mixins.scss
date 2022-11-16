@@ -1,8 +1,10 @@
 //Pour importer @import "../Utils/mixins.scss";
 
+@import "../Utils/variables.scss";
+
 @mixin button {
     color: white;
-    background:linear-gradient(175deg, #ed73da, #9356DC);
+    background: linear-gradient(175deg, $secondaryColor, $primaryColor);
     width: 17rem;
     height: 3.7rem;
     border-radius: 10rem;
@@ -11,7 +13,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 12px rgb(163, 163, 163);
-    margin: 1rem 0 4.5rem 0;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 1.3rem;
 
@@ -22,3 +23,151 @@
     }
 }
 
+@mixin logo {
+    width: 16rem;
+    height: 2.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+//Accueil-partie Fonctionnement
+
+@mixin fonctionnement {
+    @media screen and (min-width: 640px) {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        gap: 2rem;
+    }
+}
+
+@mixin fonctionnementIcones_xsmall {
+    @media screen and (min-width: 360px) {
+        margin-right: -20px;
+    }
+}
+
+@mixin fonctionnementIcones_small {
+    @media screen and (min-width: 480px) {
+        margin: 0 1rem 0 0.8rem;
+    }
+}
+
+@mixin fonctionnement_sansTitre {
+    @media screen and (min-width: 640px) {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@mixin etapes_xsmall {
+    @media screen and (min-width: 400px) {
+        margin-left: 2rem;
+    }
+}
+
+@mixin etapes_small {
+    @media screen and (min-width: 480px) {
+        margin-left: 0;
+    }
+}
+
+@mixin etapes_bigger {
+    @media screen and (min-width: 640px) and (max-width: 1250px) {
+        margin: 1rem;
+    }
+}
+
+@mixin number_xsmall {
+    @media screen and (min-width: 400px) {
+        margin-right: 20px;
+    }
+}
+
+@mixin number_small {
+    @media screen and (min-width: 430px) {
+        margin-left: -16px;
+        margin-right: 0;
+    }
+}
+
+@mixin number_bigger {
+    @media screen and (min-width: 640px) {
+        align-self: start;
+        margin-top: -.5rem;
+        margin-left: -.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+
+//Accueil-Partie Restaurants
+
+@mixin restaurants {
+    @media screen and (min-width: 640px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 25px;
+        row-gap: 15px;
+    }
+}
+
+@mixin restaurants_carte_bigger {
+    @media screen and (min-width: 640px) {
+        margin: 0;
+        height: 340px;
+    }
+}
+
+@mixin restaurants_carte_xbigger {
+    @media screen and (min-width: 640px) and (max-width: 735px) {
+        height: 380px;
+    }
+}
+
+@mixin restaurants_carte_2xbigger {
+    @media screen and (min-width: 735px) {
+        height: 350px;
+    }
+}
+
+@mixin restaurants_carte_3xbigger {
+    @media screen and (min-width: 1300px) {
+        width: 32%;
+    }
+}
+
+@mixin nouveau_bigger {
+    @media screen and (min-width: 640px) and (max-width: 730px) {
+        width: 80px;
+        height: 32px;
+        font-size: .9rem;
+    }
+}
+
+@mixin nouveau_xbigger {
+    @media screen and (min-width: 730px) and (max-width: 850px) {
+        width: 96px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+@mixin infosRestau {
+    @media screen and (min-width: 640px) and (max-width: 850px) {
+        margin-right: 19.2px;
+    }
+}
+
+
+//Restaurants-Partie Menu
+
+@mixin texteCarte {
+    @media screen and (min-width:400px) {
+        height: 90px;
+    }
+}

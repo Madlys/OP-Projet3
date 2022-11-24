@@ -19,11 +19,14 @@
     
     @include fonctionnementIcones_xsmall;
     @include fonctionnementIcones_small;
+    @include fonctionnementIcones_bigger;
 }
 
 
 //Accueil-Animation coeur
-
+.like {
+    display: flex;
+}
 .coeurplein-accueil, .coeurplein-restaurant {
     font-size: 37px;
     background: linear-gradient(0deg, $secondaryColor, $primaryColor);
@@ -31,8 +34,7 @@
     -webkit-background-clip: text;
     color:transparent;
     position: relative;
-    left: 40.1px;
-    top: 1px;
+    left: 36px;
     z-index: 1;
     opacity: 0;
 

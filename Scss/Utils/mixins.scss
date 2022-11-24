@@ -59,28 +59,35 @@
     }
 }
 
-@mixin fonctionnement_sansTitre {
-    @media screen and (min-width: map-get($breakpoints, tablet)) {
-        flex-direction: column;
-        height: auto;
+@mixin fonctionnementIcones_bigger {
+    @media screen and (min-width: 685px) {
+        font-size: 35px;
     }
 }
 
-@mixin etapes_xsmall {
+@mixin fonctionnementIcones_xbigger {
+    @media screen and (min-width: 1080px) {
+        font-size: 45px;
+    }
+}
+
+@mixin fonctionnement_sansTitre {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 175px;
+    }
+}
+
+@mixin etapes_small {
     @media screen and (min-width: map-get($breakpoints, mobile_xsmall)) {
         margin-left: 2rem;
     }
 }
 
-@mixin etapes_small {
-    @media screen and (min-width: map-get($breakpoints, mobile_small)) {
-        margin-left: 0;
-    }
-}
-
 @mixin etapes_bigger {
-    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: 1250px) {
-        margin: 1rem;
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        margin: 1rem 1rem 2rem 1rem;
     }
 }
 
@@ -129,18 +136,12 @@
 }
 
 @mixin restaurants_carte_xbigger {
-    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, tablet_big)) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         height: 380px;
     }
 }
 
 @mixin restaurants_carte_2xbigger {
-    @media screen and (min-width: map-get($breakpoints, tablet_big)) {
-        height: 350px;
-    }
-}
-
-@mixin restaurants_carte_3xbigger {
     @media screen and (min-width: 1300px) {
         width: 32%;
     }
@@ -160,12 +161,6 @@
         width: 96px;
         height: 40px;
         font-size: 1.1rem;
-    }
-}
-
-@mixin infosRestau {
-    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, tablet_xbig)) {
-        margin-right: 19.2px;
     }
 }
 

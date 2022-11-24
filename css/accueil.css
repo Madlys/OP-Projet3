@@ -187,13 +187,16 @@ header img {
 @media screen and (min-width: 640px) {
   .fonctionnement .etapes .etape {
     flex-direction: column;
-    height: auto;
+    justify-content: space-between;
+    height: 175px;
   }
 }
 .fonctionnement .etapes .etape:hover {
   background-color: #f5edff;
 }
-.fonctionnement .etapes .etape:hover .fa-mobile-alt, .fonctionnement .etapes .etape:hover .fa-list-ul, .fonctionnement .etapes .etape:hover .fa-store {
+.fonctionnement .etapes .etape:hover .fa-mobile-alt,
+.fonctionnement .etapes .etape:hover .fa-list-ul,
+.fonctionnement .etapes .etape:hover .fa-store {
   color: #9356DC;
   opacity: 1;
 }
@@ -206,14 +209,9 @@ header img {
     margin-left: 2rem;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 640px) {
   .fonctionnement .etapes .etape h2 {
-    margin-left: 0;
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 1250px) {
-  .fonctionnement .etapes .etape h2 {
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
   }
 }
 .fonctionnement .etapes .etape .number {
@@ -283,14 +281,9 @@ header img {
     height: 340px;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 735px) {
+@media screen and (min-width: 640px) {
   .liste .cartes a {
     height: 380px;
-  }
-}
-@media screen and (min-width: 735px) {
-  .liste .cartes a {
-    height: 350px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -347,52 +340,49 @@ header img {
   justify-content: space-between;
   align-items: center;
   margin: 0 40px 24px 16px;
+  height: 30%;
 }
-@media screen and (min-width: 640px) and (max-width: 850px) {
-  .liste .cartes a .infos {
-    margin-right: 19.2px;
-  }
-}
-.liste .cartes a .infos .texte {
-  line-height: 11.2px;
-}
-.liste .cartes a .infos .texte h2 {
+.liste .cartes a .infos h2 {
   line-height: 28px;
-  margin: 15px 16px -5px 0;
+  margin: 15px 0 -5px 0;
 }
-.liste .cartes a .infos .texte h2, .liste .cartes a .infos .texte p {
+.liste .cartes a .infos h2,
+.liste .cartes a .infos p {
   color: black;
 }
+
+/*@import "../Utils/variables.scss";
 
 #loader {
   font-size: 180px;
   position: absolute;
   left: 45%;
   top: 40%;
-  background-color: linear-gradient(75deg, #FF79DA #9356DC);
-  background-clip: text;
+  background: linear-gradient(0deg, $secondaryColor $primaryColor);  //invalid property value
+  background-clip: text;  //invalid property value
   -webkit-background-clip: text;
-  color: transparent;
+  color:transparent;
 }
 
-@keyframes loader {
-  0% {
-    visibility: visible;
+  @keyframes loader {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
   }
-  100% {
-    visibility: hidden;
-  }
-}
-.splachscreen {
-  background-color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  animation: loader 0.5s ease 2s 1 normal forwards;
-}
 
+
+  .splachscreen {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: loader .5s ease 2s 1 normal forwards;
+  }*/
 .fa-map-marker-alt {
   margin-right: 1.5rem;
   font-size: 1.5rem;
@@ -414,6 +404,15 @@ header img {
     margin: 0 1rem 0 0.8rem;
   }
 }
+@media screen and (min-width: 685px) {
+  .fa-mobile-alt, .fa-list-ul, .fa-store {
+    font-size: 35px;
+  }
+}
+
+.like {
+  display: flex;
+}
 
 .coeurplein-accueil, .coeurplein-restaurant {
   font-size: 37px;
@@ -422,8 +421,7 @@ header img {
   -webkit-background-clip: text;
   color: transparent;
   position: relative;
-  left: 40.1px;
-  top: 1px;
+  left: 36px;
   z-index: 1;
   opacity: 0;
 }

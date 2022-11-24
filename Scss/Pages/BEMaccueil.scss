@@ -76,7 +76,9 @@
             &:hover {
                 background-color: #f5edff;
 
-                .fa-mobile-alt, .fa-list-ul, .fa-store {
+                .fa-mobile-alt,
+                .fa-list-ul,
+                .fa-store {
                     color: $primaryColor;
                     opacity: 1;
                 }
@@ -85,11 +87,10 @@
             h2 {
                 margin-right: 2rem;
                 margin-left: 0;
-                
-                @include etapes_xsmall;
+
                 @include etapes_small;
                 @include etapes_bigger;
-            
+
             }
 
             .number {
@@ -140,14 +141,13 @@
             @include restaurants_carte_bigger;
             @include restaurants_carte_xbigger;
             @include restaurants_carte_2xbigger;
-            @include restaurants_carte_3xbigger;
 
             .carte {
                 width: 100%;
                 height: 100%;
                 box-shadow: 5px 5px 12px rgb(188, 188, 188);
                 border-radius: 1.5rem;
-                
+
                 .photo {
                     position: relative;
 
@@ -185,20 +185,16 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 0 40px 24px 16px;
+                height: 30%;
 
-                @include infosRestau;
+                h2 {
+                    line-height: 28px;
+                    margin: 15px 0 -5px 0;
+                }
 
-                .texte {
-                    line-height: 11.2px;
-                    
-                    h2 {
-                        line-height: 28px;
-                        margin: 15px 16px -5px 0;
-                    }
-
-                    h2, p {
-                        color: black;
-                    }
+                h2,
+                p {
+                    color: black;
                 }
 
             }

@@ -1,12 +1,12 @@
 
-/*@import "../Utils/variables.scss";
+@import "../Utils/variables.scss";
 
 #loader {
   font-size: 180px;
   position: absolute;
   left: 45%;
   top: 40%;
-  background: linear-gradient(0deg, $secondaryColor $primaryColor);
+  background-color: linear-gradient(75deg, $secondaryColor $primaryColor);
   background-clip: text;
   -webkit-background-clip: text;
   color:transparent;
@@ -15,10 +15,10 @@
   
   @keyframes loader {
     0% {
-      opacity: 1;
+      visibility: visible;
     }
     100% {
-      opacity: 0;
+      visibility: hidden;
     }
   }
   
@@ -31,4 +31,4 @@
     width: 100%;
     height: 100%;
     animation: loader .5s ease 2s 1 normal forwards;
-  }*/
+  }

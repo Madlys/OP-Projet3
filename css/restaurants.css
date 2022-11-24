@@ -13,6 +13,10 @@
   font-size: 1.3rem;
   margin: 1rem 0 4.5rem 0;
 }
+.explorer-button:hover {
+  background: linear-gradient(175deg, rgba(255, 121, 217, 0.7137254902), rgba(146, 86, 220, 0.7254901961));
+  box-shadow: 5px 5px 12px rgb(49, 49, 49);
+}
 @media screen and (min-width: 640px) {
   .explorer-button {
     width: 25rem;
@@ -35,6 +39,10 @@
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
   margin: 70px auto 120px auto;
+}
+.order-button:hover {
+  background: linear-gradient(175deg, rgba(255, 121, 217, 0.7137254902), rgba(146, 86, 220, 0.7254901961));
+  box-shadow: 5px 5px 12px rgb(49, 49, 49);
 }
 @media screen and (min-width: 640px) {
   .order-button {

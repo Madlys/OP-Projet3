@@ -16,6 +16,11 @@
     font-family: "Roboto-Regular", sans-serif;
     font-size: 1.3rem;
 
+    &:hover {
+        background: linear-gradient(175deg, #ff79d9b6, #9256dcb9);
+        box-shadow: 5px 5px 12px rgb(49, 49, 49);
+    }
+
     @media screen and (min-width: map-get($breakpoints, tablet)) {
         width: 25rem;
         height: 5.5rem;

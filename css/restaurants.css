@@ -224,6 +224,7 @@ footer ul li a {
 @media screen and (min-width: 850px) {
   .menu .menu-cartes {
     display: flex;
+    justify-content: space-between;
   }
 }
 .menu .menu-cartes .menu-cartes_restaurant {

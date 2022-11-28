@@ -207,7 +207,6 @@
 @mixin menu-cartes_pc {
     @media screen and (min-width: map-get($breakpoints, tablet_xbig)) {
         display: flex;
-        justify-content: space-between;
     }    
 }
 

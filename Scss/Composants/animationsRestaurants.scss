@@ -1,0 +1,27 @@
+//Selection d'un plat
+
+.check {
+    //visibility: collapse;
+    font-size: 35px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    overflow: hidden; 
+    background-size: cover;
+
+    &:hover {
+        background-color: $tertiaryColor;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    
+    @keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30px);
+    }
+    }
+      
+}

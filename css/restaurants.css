@@ -224,7 +224,6 @@ footer ul li a {
 @media screen and (min-width: 850px) {
   .menu .menu-cartes {
     display: flex;
-    justify-content: space-between;
   }
 }
 .menu .menu-cartes .menu-cartes_restaurant {
@@ -247,7 +246,7 @@ footer ul li a {
   box-shadow: 5px 5px 12px rgb(188, 188, 188);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   min-height: 100px;
   margin-bottom: 20px;
 }
@@ -255,6 +254,10 @@ footer ul li a {
   margin-left: 15px;
   margin-right: 15px;
   line-height: 1px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description h3, .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description p {
   line-height: 25px;
@@ -266,16 +269,33 @@ footer ul li a {
   margin-top: 0;
 }
 .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix {
-  margin-right: 25px;
+  margin-right: 10px;
+  display: flex;
 }
 .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix p {
-  position: relative;
-  top: 25px;
   opacity: 0.8;
   font-weight: bold;
 }
-.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix i {
-  visibility: collapse;
+
+.check {
+  font-size: 35px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+.check:hover {
+  background-color: #99E2D0;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */

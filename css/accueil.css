@@ -351,38 +351,35 @@ header img {
   color: black;
 }
 
-/*@import "../Utils/variables.scss";
-
 #loader {
   font-size: 180px;
   position: absolute;
   left: 45%;
   top: 40%;
-  background: linear-gradient(0deg, $secondaryColor $primaryColor);  //invalid property value
-  background-clip: text;  //invalid property value
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
-  color:transparent;
+  color: transparent;
 }
 
-  @keyframes loader {
-    0% {
-      visibility: visible;
-    }
-    100% {
-      visibility: hidden;
-    }
+@keyframes loader {
+  0% {
+    visibility: visible;
   }
+  100% {
+    visibility: hidden;
+  }
+}
+.splachscreen {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: loader 0.5s ease 2s 1 normal forwards;
+}
 
-
-  .splachscreen {
-    background-color: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    animation: loader .5s ease 2s 1 normal forwards;
-  }*/
 .fa-map-marker-alt {
   margin-right: 1.5rem;
   font-size: 1.5rem;

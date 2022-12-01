@@ -385,23 +385,31 @@ header img {
   opacity: 0.8;
 }
 
-.fa-mobile-alt, .fa-list-ul, .fa-store {
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
   margin: 0;
   font-size: 25.6px;
   opacity: 0.6;
 }
 @media screen and (min-width: 360px) {
-  .fa-mobile-alt, .fa-list-ul, .fa-store {
+  .fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
     margin-right: -20px;
   }
 }
 @media screen and (min-width: 480px) {
-  .fa-mobile-alt, .fa-list-ul, .fa-store {
+  .fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
     margin: 0 1rem 0 0.8rem;
   }
 }
 @media screen and (min-width: 685px) {
-  .fa-mobile-alt, .fa-list-ul, .fa-store {
+  .fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
     font-size: 35px;
   }
 }
@@ -409,8 +417,8 @@ header img {
 .like {
   display: flex;
 }
-
-.coeurplein-accueil, .coeurplein-restaurant {
+.like .coeurplein-accueil,
+.like .coeurplein-restaurant {
   font-size: 37px;
   background: linear-gradient(0deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -421,7 +429,8 @@ header img {
   z-index: 1;
   opacity: 0;
 }
-.coeurplein-accueil:hover, .coeurplein-restaurant:hover {
+.like .coeurplein-accueil:hover,
+.like .coeurplein-restaurant:hover {
   opacity: 1;
   animation: appearance 0.4s ease-in 0s 1 normal forwards;
 }
@@ -436,21 +445,21 @@ header img {
     transform: scale(1);
   }
 }
-
 @media screen and (max-width: 458px) {
-  .coeurplein-restaurant {
+  .like .coeurplein-restaurant {
     left: -1px;
     top: 37px;
   }
 }
-
-.coeurvide-accueil, .coeurvide-restaurant {
+.like .coeurvide-accueil,
+.like .coeurvide-restaurant {
   font-size: 35px;
   position: relative;
   color: black;
 }
 
-.retour, .header-restaurant a {
+.retour,
+.header-restaurant a {
   font-size: 32px;
   color: rgba(0, 0, 0, 0.769);
   position: absolute;
@@ -458,7 +467,8 @@ header img {
   top: 17px;
 }
 @media screen and (max-width: 480px) {
-  .retour, .header-restaurant a {
+  .retour,
+.header-restaurant a {
     font-size: 24px;
     left: 15px;
   }

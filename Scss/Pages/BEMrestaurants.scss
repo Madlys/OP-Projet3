@@ -28,6 +28,7 @@
 
     .menu-cartes {
         @include menu-cartes_pc;
+        width: 100%;
 
         .menu-cartes_restaurant {
             height: 30%;
@@ -54,6 +55,7 @@
                 align-items: flex-end;
                 min-height: 100px;
                 margin-bottom: 20px;
+                overflow: hidden;
 
                 .menu-cartes_restaurant-id_description {
                     margin-left: 15px;
@@ -61,7 +63,6 @@
                     line-height: 1px;
                     width: 400px;
                     white-space: nowrap;
-                    overflow: hidden;
                     text-overflow: ellipsis;
 
                     h3, p {
@@ -78,12 +79,33 @@
                 }
 
                 .menu-cartes_restaurant-id_prix {
-                    margin-right: 10px;
                     display: flex;
+                    min-height: 100px;
+                    position: relative;
+                    left: 100px;
 
                     p {
                         opacity: .8;
                         font-weight: bold;
+                        position: relative;
+                        top: 35px;
+                    }
+                    .check-background {
+                        background-color: $tertiaryColor;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        margin-left: 50px;
+            
+                        .check {
+                            //visibility: collapse;
+                            font-size: 35px;
+                            color: white;
+                            display: inline-block;
+                            position: relative;
+                            overflow: hidden;
+                            top: 30px;
+                            margin: 0 30px 0 30px;
+                        }
                     }
                 }
             }

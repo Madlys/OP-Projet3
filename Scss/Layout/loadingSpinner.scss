@@ -1,33 +1,33 @@
-
 @import "../Utils/variables.scss";
 
-#loader {
-  font-size: 180px;
-  position: absolute;
-  left: 45%;
-  top: 40%;
-  background: linear-gradient(0deg, $secondaryColor, $primaryColor); 
-  background-clip: text;  //invalid property value
-  -webkit-background-clip: text;
-  color:transparent;
-}
+.splachscreen {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: loader .5s ease 2s 1 normal forwards;
+
+  #loader {
+    font-size: 180px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    background: linear-gradient(0deg, $secondaryColor, $primaryColor);
+    background-clip: text; //invalid property value
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 
   @keyframes loader {
     0% {
       visibility: visible;
     }
+
     100% {
       visibility: hidden;
     }
   }
-  
 
-  .splachscreen {
-    background-color: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    animation: loader .5s ease 2s 1 normal forwards;
-  }
+}

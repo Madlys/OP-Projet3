@@ -14,6 +14,12 @@
         align-items: center;
         box-shadow: inset 0 3px 5px rgb(196, 196, 196);
 
+        .fa-map-marker-alt {
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+
         h2 {
             opacity: 0.8;
         }
@@ -84,15 +90,6 @@
                 }
             }
 
-            h2 {
-                margin-right: 2rem;
-                margin-left: 0;
-
-                @include etapes_small;
-                @include etapes_bigger;
-
-            }
-
             .number {
                 background-color: $primaryColor;
                 width: 32px;
@@ -109,6 +106,28 @@
                 @include number_small;
                 @include number_bigger;
             }
+
+            .fa-mobile-alt,
+            .fa-list-ul,
+            .fa-store {
+                margin: 0;
+                font-size: 25.6px;
+                opacity: 0.6;
+
+                @include fonctionnementIcones_xsmall;
+                @include fonctionnementIcones_small;
+                @include fonctionnementIcones_bigger;
+            }
+
+            h2 {
+                margin-right: 2rem;
+                margin-left: 0;
+
+                @include etapes_small;
+                @include etapes_bigger;
+
+            }
+
         }
     }
 }

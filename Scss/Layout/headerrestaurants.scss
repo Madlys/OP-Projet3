@@ -1,8 +1,26 @@
+@import "../Utils/variables.scss";
 @import "../Utils/mixins.scss";
 
 .header-restaurant {
     display: flex;
     flex-direction: column;
+
+
+    .retour,
+    a {
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.769);
+        position: absolute;
+        left: 20px;
+        top: 17px;
+
+        @include retour_small;
+    }
+
+    .logo {
+        @include logo;
+        @include logo_small;
+    }
 
     .photo_restaurant {
         width: 100%;
@@ -10,9 +28,5 @@
         margin-top: 0;
         margin-bottom: -10%;
     }
-    
-    .logo {
-        @include logo;
-        @include logo_small;
-    }
+
 }

@@ -1,4 +1,58 @@
-//Selection d'un plat
+@import "../Utils/variables.scss";
+@import "../Utils/mixins.scss";
+
+
+//Accueil - Animation coeur
+
+.like {
+    display: flex;
+
+    .coeurplein-accueil,
+    .coeurplein-restaurant {
+        font-size: 37px;
+        background: linear-gradient(0deg, $secondaryColor, $primaryColor);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        left: 36px;
+        z-index: 1;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+            animation: appearance .4s ease-in 0s 1 normal forwards;
+        }
+
+        @keyframes appearance {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .coeurplein-restaurant {
+        @include coeur_small;
+    }
+
+    .coeurvide-accueil,
+    .coeurvide-restaurant {
+        font-size: 35px;
+        position: relative;
+        color: black;
+    }
+}
+
+
+//Restaurants - Selection d'un plat
 .menu-cartes_restaurant-id {
 
     .menu-cartes_restaurant-id_description {}
@@ -48,7 +102,8 @@
     }
 }
 
-//Apparition plats
+
+//Restaurants - Apparition plats
 .menu-cartes_restaurant-id {
 
     visibility: hidden;

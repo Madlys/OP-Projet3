@@ -61,12 +61,14 @@
                     margin-left: 15px;
                     margin-right: 15px;
                     line-height: 1px;
-                    width: 400px;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
+                    width: 70%;
 
-                    h3, p {
+                    h3,
+                    p {
                         line-height: 25px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
 
                     h3 {
@@ -90,12 +92,13 @@
                         position: relative;
                         top: 35px;
                     }
+
                     .check-background {
                         background-color: $tertiaryColor;
                         border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
                         margin-left: 50px;
-            
+
                         .check {
                             //visibility: collapse;
                             font-size: 35px;

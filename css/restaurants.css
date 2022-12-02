@@ -238,6 +238,7 @@ footer ul li a {
   .menu .menu-cartes {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 .menu .menu-cartes .menu-cartes_restaurant {
@@ -269,12 +270,14 @@ footer ul li a {
   margin-left: 15px;
   margin-right: 15px;
   line-height: 1px;
-  width: 400px;
+  width: 70%;
+}
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description h3,
+.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description p {
+  line-height: 25px;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-.menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description h3, .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description p {
-  line-height: 25px;
+  overflow: hidden;
 }
 .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_description h3 {
   margin-bottom: 0;

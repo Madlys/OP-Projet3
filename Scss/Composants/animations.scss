@@ -55,47 +55,33 @@
 //Restaurants - Selection d'un plat
 .menu-cartes_restaurant-id {
 
-    .menu-cartes_restaurant-id_description {}
+    &:hover {
+        overflow: hidden;
+    }
 
-    &:hover .menu-cartes_restaurant-id_prix {
-        animation: slide-left 0.6s ease-in-out 0.2s both;
+    &:hover .check-background {
+        animation: check_slide-left 0.6s ease-in-out 0.2s both;
 
-        @keyframes slide-left {
-            0% {
-                transform: translateX(0);
-            }
+        @keyframes check_slide-left {
+            0% {}
 
             100% {
-                transform: translateX(-70px);
+                visibility: visible;
+                width: 95px;
             }
         }
 
-        p {}
+        .check {
+            animation: rotate-center 0.6s ease-in-out 0.2s both;
 
-        .check-background {
-            animation: check_slide-left 0.6s ease-in-out 0.2s both;
-
-            @keyframes check_slide-left {
+            @keyframes rotate-center {
                 0% {
-                    transform: translateX(0);
+                    transform: rotate(0);
                 }
+
 
                 100% {
-                    transform: translateX(-30px);
-                }
-            }
-
-            .check {
-                animation: rotate-center 0.6s ease-in-out 0.2s both;
-
-                @keyframes rotate-center {
-                    0% {
-                        transform: rotate(0);
-                    }
-
-                    100% {
-                        transform: rotate(360deg);
-                    }
+                    transform: rotate(360deg);
                 }
             }
         }

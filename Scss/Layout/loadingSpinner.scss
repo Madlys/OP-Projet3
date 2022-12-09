@@ -15,7 +15,7 @@
     left: 45%;
     top: 40%;
     background: linear-gradient(0deg, $secondaryColor, $primaryColor);
-    background-clip: text; //invalid property value
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }

@@ -176,10 +176,11 @@
 
 @mixin retour_small {
     @media screen and (max-width: map-get($breakpoints, mobile_small)) {
-        font-size:24px;
+        font-size: 24px;
         left: 15px;
     }
 }
+
 
 //Restaurants-Partie Menu
 
@@ -191,24 +192,38 @@
 }
 
 
-
 @mixin menu-titre_tablet {
-    @media screen and (min-width: map-get($breakpoints, tablet)){
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         justify-content: space-between;
     }
 }
 
 @mixin menu-titre_tablet-xbig {
-    @media screen and (min-width: map-get($breakpoints, tablet_xbig)){
+    @media screen and (min-width: map-get($breakpoints, tablet_xbig)) {
         justify-content: flex-start;
     }
 }
 
+
 @mixin menu-cartes_pc {
     @media screen and (min-width: map-get($breakpoints, tablet_xbig)) {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
-    }    
+    }
 }
 
+
+@mixin menu-cartes-restaurant_tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet_xbig)) {
+        width: 45%;
+        margin: 0 0 50px 0;
+    }
+}
+
+@mixin menu-cartes-restaurant_pc {
+    @media screen and (min-width: map-get($breakpoints, pc)) {
+        width: 30%;
+    }
+
+}

@@ -10,9 +10,9 @@
   animation: loader .5s ease 2s 1 normal forwards;
 
   #loader {
-    font-size: 180px;
+    font-size: 20vw;
     position: absolute;
-    left: 45%;
+    left: 40vw;
     top: 40%;
     background: linear-gradient(0deg, $secondaryColor, $primaryColor);
     background-clip: text;

@@ -232,6 +232,7 @@ footer ul li a {
   margin-left: 30px;
   visibility: collapse;
   width: 0;
+  overflow: hidden;
 }
 .menu .menu-cartes .menu-cartes_restaurant .menu-cartes_restaurant-id .menu-cartes_restaurant-id_prix .check-background .check {
   font-size: 35px;

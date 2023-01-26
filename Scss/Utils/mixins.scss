@@ -19,6 +19,7 @@
     &:hover {
         background: linear-gradient(175deg, #ff79d9b6, #9256dcb9);
         box-shadow: 5px 5px 12px rgb(49, 49, 49);
+        cursor: pointer;
     }
 
     @media screen and (min-width: map-get($breakpoints, tablet)) {

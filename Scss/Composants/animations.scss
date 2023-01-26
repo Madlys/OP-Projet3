@@ -18,10 +18,11 @@
         left: 36px;
         z-index: 1;
         opacity: 0;
+        cursor: pointer;
 
         &:hover {
             opacity: 1;
-            animation: appearance .4s ease-in 0s 1 normal forwards;
+            animation: appearance .4s ease-in 0ms 1 normal forwards;
         }
 
         @keyframes appearance {
@@ -29,7 +30,7 @@
                 transform: scale(0);
             }
 
-            50% {
+            30% {
                 transform: scale(.5);
             }
 
@@ -90,7 +91,7 @@
 
 
 //Restaurants - Apparition plats
-.menu-cartes_restaurant-id {
+.menu-cartes_restaurant {
 
     visibility: hidden;
 
@@ -113,19 +114,14 @@
     }
 
     &:nth-of-type(1) {
-        animation: fade-in-fwd 0.6s ease-in-out 0.2s forwards;
-    }
-
-    &:nth-of-type(2) {
         animation: fade-in-fwd 0.6s ease-in-out 0.5s forwards;
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(2) {
         animation: fade-in-fwd 0.6s ease-in-out 0.8s forwards;
     }
 
-    &:nth-of-type(4) {
+    &:nth-of-type(3) {
         animation: fade-in-fwd 0.6s ease-in-out 1.2s forwards;
     }
-
 }

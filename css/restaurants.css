@@ -16,6 +16,7 @@
 .explorer-button:hover {
   background: linear-gradient(175deg, rgba(255, 121, 217, 0.7137254902), rgba(146, 86, 220, 0.7254901961));
   box-shadow: 5px 5px 12px rgb(49, 49, 49);
+  cursor: pointer;
 }
 @media screen and (min-width: 640px) {
   .explorer-button {
@@ -43,6 +44,7 @@
 .order-button:hover {
   background: linear-gradient(175deg, rgba(255, 121, 217, 0.7137254902), rgba(146, 86, 220, 0.7254901961));
   box-shadow: 5px 5px 12px rgb(49, 49, 49);
+  cursor: pointer;
 }
 @media screen and (min-width: 640px) {
   .order-button {
@@ -118,9 +120,9 @@ footer ul li a {
 }
 .header-restaurant .photo_restaurant {
   width: 100%;
-  height: auto;
+  height: 1000px;
   margin-top: 0;
-  margin-bottom: -10%;
+  margin-bottom: -50%;
 }
 
 .menu {
@@ -256,17 +258,18 @@ footer ul li a {
   left: 36px;
   z-index: 1;
   opacity: 0;
+  cursor: pointer;
 }
 .like .coeurplein-accueil:hover,
 .like .coeurplein-restaurant:hover {
   opacity: 1;
-  animation: appearance 0.4s ease-in 0s 1 normal forwards;
+  animation: appearance 0.4s ease-in 0ms 1 normal forwards;
 }
 @keyframes appearance {
   0% {
     transform: scale(0);
   }
-  50% {
+  30% {
     transform: scale(0.5);
   }
   100% {
@@ -310,7 +313,7 @@ footer ul li a {
   }
 }
 
-.menu-cartes_restaurant-id {
+.menu-cartes_restaurant {
   visibility: hidden;
 }
 @keyframes fade-in-fwd {
@@ -328,16 +331,13 @@ footer ul li a {
     opacity: 1;
   }
 }
-.menu-cartes_restaurant-id:nth-of-type(1) {
-  animation: fade-in-fwd 0.6s ease-in-out 0.2s forwards;
-}
-.menu-cartes_restaurant-id:nth-of-type(2) {
+.menu-cartes_restaurant:nth-of-type(1) {
   animation: fade-in-fwd 0.6s ease-in-out 0.5s forwards;
 }
-.menu-cartes_restaurant-id:nth-of-type(3) {
+.menu-cartes_restaurant:nth-of-type(2) {
   animation: fade-in-fwd 0.6s ease-in-out 0.8s forwards;
 }
-.menu-cartes_restaurant-id:nth-of-type(4) {
+.menu-cartes_restaurant:nth-of-type(3) {
   animation: fade-in-fwd 0.6s ease-in-out 1.2s forwards;
 }
 
